@@ -1,0 +1,7 @@
+public class PrintoutPullParserTest extends InstrumentationTestCase {
+
+    public void testParsing() throws Exception {
+        PrintoutPullParser parser = new PrintoutPullParser();
+        parser.parse(getInstrumentation().getContext().getResources().getXml(R.xml.printer_configuration));
+    }
+}
